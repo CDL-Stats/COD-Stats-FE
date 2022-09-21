@@ -1,0 +1,39 @@
+body {
+  background-color: #f6f6f6;
+}
+
+.teams-container {
+  max-width: 1280px;
+  margin: auto;
+  background: white;
+  padding: 28px;
+  margin-top: 28px;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 150px);
+  justify-content: space-between;
+  row-gap: 20px;
+}
+
+.team-tile {
+  height: 150px;
+  border: 1px solid black;
+  border-radius: 8px;
+  padding: 12px 0;
+  .team-tile__image {
+    width: 90%;
+    height: 90%;
+    margin: 0 auto;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: fill;
+    }
+  }
+  .team-tile__text {
+    text-align: center;
+    padding-bottom: 12px;
+  }
+}

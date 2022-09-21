@@ -1,0 +1,56 @@
+body {
+  background-color: #f6f6f6;
+}
+
+.team-container {
+  max-width: 1280px;
+  margin: auto;
+  background: white;
+  padding: 28px;
+  margin-top: 28px;
+}
+
+.team-header {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  margin-bottom: 20px;
+  h1 {
+    font-size: 42px;
+    line-height: 42px;
+  }
+  .team-header__picture-container {
+    height: 50px;
+    width: 50px;
+    img {
+      object-fit: fill;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+.team-roster__header {
+  margin-bottom: 20px;
+}
+
+.team-roster__table {
+  width: 100%;
+  text-align: left;
+  border-spacing: 12px;
+  margin-bottom: 24px;
+}
+
+.team-schedule__table {
+  width: 90%;
+  text-align: left;
+  border-spacing: 12px;
+  margin-bottom: 24px;
+}
+
+.team-stats__table {
+  width: 50%;
+  text-align: left;
+  border-spacing: 12px;
+  margin-bottom: 24px;
+}
