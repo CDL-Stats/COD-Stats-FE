@@ -65,7 +65,6 @@ export default function Team() {
     fetchPlayers();
     fetchSchedule();
     fetchStats();
-    console.log(typeof schedule[0]?.startDate);
   }, []);
 
   return (
@@ -81,7 +80,7 @@ export default function Team() {
           </div>
         )}
 
-        {roster && (
+        {roster.length > 0 && (
           <div className='team-roster'>
             <h2 className='team-roster__header'>Roster</h2>
             <table className='team-roster__table'>
@@ -109,7 +108,7 @@ export default function Team() {
           </div>
         )}
 
-        {schedule && (
+        {schedule.length > 0 && (
           <div className='team-schedule'>
             <h2>Schedule</h2>
             <table className='team-schedule__table'>
@@ -134,7 +133,7 @@ export default function Team() {
           </div>
         )}
 
-        {stats.length > 1 && (
+        {stats.length > 0 && (
           <div className='team-stats'>
             <h2>Stats</h2>
             <table className='team-stats__table'>
