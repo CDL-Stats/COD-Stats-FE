@@ -17,7 +17,9 @@ export default function NavBar() {
             <a className='nav-link'>Players</a>
           </li>
           <li>
-            <a className='nav-link'>Teams</a>
+            <a className='nav-link' href='/teams'>
+              Teams
+            </a>
           </li>
           <li>
             <a className='nav-link'>Schedule</a>
