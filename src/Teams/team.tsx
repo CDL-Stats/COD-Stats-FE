@@ -134,7 +134,7 @@ export default function Team() {
           </div>
         )}
 
-        {stats && (
+        {stats.length > 1 && (
           <div className='team-stats'>
             <h2>Stats</h2>
             <table className='team-stats__table'>
