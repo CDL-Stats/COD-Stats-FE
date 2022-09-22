@@ -14,7 +14,9 @@ export default function NavBar() {
         </a>
         <ul>
           <li>
-            <a className='nav-link'>Players</a>
+            <a className='nav-link' href='/players'>
+              Players
+            </a>
           </li>
           <li>
             <a className='nav-link' href='/teams'>
